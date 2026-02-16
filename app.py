@@ -17,7 +17,7 @@ if st.button("Check book"):
     new_book = st.text_input("Add book")
     if st.button("Add") and user_input in books2:
       st.success("The book exists in database")
-    if st.button("Add"):
+    elif st.button("Add"):
       st.write(new_book)
       books2.append(new_book)
       st.success(books)
