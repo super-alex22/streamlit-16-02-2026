@@ -6,7 +6,7 @@ st.write("Enter a book title to check whether it is stored in database")
 user_input = st.text_input("Book Title")
 
 if st.button("Check book"):
-  if user_input.strip()="":
+  if user_input.strip()=="":
     st.warning("Kindly have the book title stated here")
   elif user_input in books:
     st.success("The book exists in database")
