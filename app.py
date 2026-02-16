@@ -16,3 +16,4 @@ if st.button("Check book"):
     if st.button("Add"):
       st.write(new_book)
       books.append(new_book)
+      st.success(books)
