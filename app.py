@@ -10,7 +10,7 @@ user_input = st.text_input("Book Title")
 if st.button("Check book"):
   if user_input.strip()=="":
     st.warning("Kindly have the book title stated here")
-  elif user_input in books:
+  elif user_input in books2:
     st.success("The book exists in database")
   else:
     st.error("The book is NOT in the database")
@@ -19,3 +19,5 @@ if st.button("Check book"):
       st.write(new_book)
       books2.append(new_book)
       st.success(books)
+    if st.button("Add") and user_input in books2:
+      st.success("The book exists in database")
