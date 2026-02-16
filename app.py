@@ -15,3 +15,4 @@ if st.button("Check book"):
     new_book = st.text_input("Add book")
     if st.button("Add"):
       st.write(new_book)
+      books.append(new_book)
