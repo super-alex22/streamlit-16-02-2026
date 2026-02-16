@@ -1,5 +1,7 @@
 import streamlit as st
 books = ["3096 Days", "Escape From Camp 14", "Stolen Life", "The Girl in the Red Coat", "A Child Called 'It'", "Hope: A Memoir of Survival in Cleveland", "The Silent Patient", "Tomorrow, and Tomorrow, and Tomorrow", "The Haunting of Hill House", "I'll Be Gone in the Dark"]
+
+books2=[]
 st.title("Book checker app")
 st.write("Enter a book title to check whether it is stored in database")
 
@@ -15,5 +17,5 @@ if st.button("Check book"):
     new_book = st.text_input("Add book")
     if st.button("Add"):
       st.write(new_book)
-      books.append(new_book)
+      books2.append(new_book)
       st.success(books)
